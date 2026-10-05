@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Cebate | Tienda</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cebate: mates de calidad para compartir momentos, tradición y estilo.">
+<meta name="keywords" content="Cebate, mates, mate argentino, mates personalizados">
+<meta property="og:title" content="Cebate | Mates">
+<meta property="og:description" content="Tradición y estilo en cada mate.">
+<meta property="og:type" content="website">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html" aria-label="Cebate inicio">
+<img src="img/logo-cebate.png" alt="Logo de Cebate">
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" href="productos.html">Tienda</a></li>
+<li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+<li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="section">
+<div class="container">
+<div class="text-center mb-4">
+<h1 class="text-danger">Tienda Cebate</h1>
+<p>Explorá nuestros mates.</p>
+</div>
+<div class="filter-buttons justify-content-center">
+<button class="filter-btn active" data-filter="todos">Todos</button>
+<button class="filter-btn" data-filter="mates">Mates</button>
+
+<button class="filter-btn" data-filter="personalizados">Personalizados</button>
+</div>
+<div class="product-grid">
+<article class="product-card producto" data-categoria="mates"><img class="product-image" src="https://acdn-us.mitiendanube.com/stores/001/621/530/products/img_5979-621cdfdd2d7ec1f1ce17702110167951-480-0.webp" alt="Mate clásico de Cebate"><h3>Mate clásico</h3><p>Mate para disfrutar la tradición todos los días.</p><p class="price">$15.000</p><button class="btn-cebate mt-auto" type="button">Consultar</button></article>
+<article class="product-card producto" data-categoria="mates"><img class="product-image" src="https://acdn-us.mitiendanube.com/stores/001/621/530/products/img_5964-e623f4525838f055b017701516073727-480-0.webp" alt="Mate personalizado de Cebate"><h3>Mate personalizado</h3><p>Un mate con un estilo propio y la identidad de Cebate.</p><p class="price">$18.000</p><button class="btn-cebate mt-auto" type="button">Consultar</button></article>
+<article class="product-card producto" data-categoria="mates"><img class="product-image" src="https://acdn-us.mitiendanube.com/stores/001/621/530/products/img_6125-3541059bd00c3f30ac17716272395687-480-0.webp" alt="Mate Cebate de Cebate"><h3>Mate Cebate</h3><p>Mate pensado para compartir y disfrutar buenos momentos.</p><p class="price">$20.000</p><button class="btn-cebate mt-auto" type="button">Consultar</button></article>
+<article class="product-card producto" data-categoria="personalizados"><img class="product-image" src="https://acdn-us.mitiendanube.com/stores/001/621/530/products/tmp_b64_da51dda1-3471-4620-99c7-28b00660bdff_1621530_1673861-fd8e5d35b3597f45be17585929887789-480-0.webp" alt="Mate especial de Cebate"><h3>Mate especial</h3><p>Una opción de mate para quienes buscan algo diferente.</p><p class="price">$22.000</p><button class="btn-cebate mt-auto" type="button">Consultar</button></article>
+<article class="product-card producto" data-categoria="personalizados"><img class="product-image" src="https://acdn-us.mitiendanube.com/stores/001/621/530/products/img_8679-fe351420230ce60bfe17900791539465-480-0.webp" alt="Mate edición Cebate de Cebate"><h3>Mate edición Cebate</h3><p>Mate inspirado en la identidad visual de la marca.</p><p class="price">$24.000</p><button class="btn-cebate mt-auto" type="button">Consultar</button></article>
+<article class="product-card producto" data-categoria="mates"><img class="product-image" src="https://acdn-us.mitiendanube.com/stores/001/621/530/products/e9f55402-bf3f-4aed-aef9-f766db930067-c6bacfd9be578dc8cd17900902838040-480-0.webp" alt="Mate tradicional de Cebate"><h3>Mate tradicional</h3><p>Una opción simple para disfrutar el mate como siempre.</p><p class="price">$16.000</p><button class="btn-cebate mt-auto" type="button">Consultar</button></article>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container text-center">
+<h3>CEBATE</h3>
+<p>Tradición y estilo en cada mate.</p>
+<p class="mb-0">Proyecto web escolar · Cebate</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const botones = document.querySelectorAll(".filter-btn");
+const productos = document.querySelectorAll(".producto");
+
+botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+        botones.forEach(b => b.classList.remove("active"));
+        boton.classList.add("active");
+
+        const filtro = boton.dataset.filter;
+
+        productos.forEach(producto => {
+            producto.style.display =
+                filtro === "todos" || producto.dataset.categoria === filtro
+                ? "flex"
+                : "none";
+        });
+    });
+});
+</script>
+</body>
+</html>
